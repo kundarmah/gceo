@@ -1,0 +1,62 @@
+//
+// Utilities
+// --------------------------------------------------
+
+// Positioning
+.dt{
+	display: table;
+	table-layout: fixed;
+}
+
+.dtc{
+	display: table-cell;
+}
+
+.dtr{
+	display: table-row;
+}
+
+.vm{
+	vertical-align: middle;
+}
+
+.vt{
+	vertical-align: top;
+}
+
+.vb{
+	vertical-align: bottom;
+}
+
+// Type
+.fw400{
+	font-weight: normal;
+}
+
+// Size
+
+.fluid{
+	@include square(100%);
+}
+
+.fluid-width{
+	width: 100%;
+}
+
+.fluid-height{
+	height: 100%;
+}
+
+// Margin
+.m0{
+	margin: 0;
+}
+
+@include margin();
+
+// Padding
+.p0{
+	padding: 0;
+}
+
+@include padding();

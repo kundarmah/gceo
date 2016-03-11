@@ -1,0 +1,30 @@
+//
+// Carousel
+// --------------------------------------------------
+
+.owl-carousel{
+
+	.owl-item{
+		@include translate3d(0, 0, 0);
+	}
+
+	.owl-nav{
+		@include translate3d(0, 0, 0);
+		
+		.owl-prev,
+		.owl-next{
+			background-color: $brand-info;
+			color: #fff;
+			font-size: 60px;
+			float: left;
+			text-align: center;
+			line-height: 70px;
+			@include size(90px,75px);
+		}
+
+		.owl-prev{
+			margin-right: 5px;
+		}
+	}
+
+}

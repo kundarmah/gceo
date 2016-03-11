@@ -1,0 +1,65 @@
+//
+// Em Icon
+// --------------------------------------------------
+
+.em{
+	font-family: $em-icon-font-family;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.em-airports:before {
+	content: "\e800";
+}
+.em-cis-countries:before {
+	content: "\e801";
+}
+.em-flood-control:before {
+	content: "\e802";
+}
+.em-green:before {
+	content: "\e803";
+}
+.em-health:before {
+	content: "\e804";
+}
+.em-ict-broadband:before {
+	content: "\e805";
+}
+.em-islamic-finance:before {
+	content: "\e806";
+}
+.em-legislation:before {
+	content: "\e807";
+}
+.em-mouse:before {
+	content: "\e808";
+}
+.em-regional-development:before {
+	content: "\e809";
+}
+.em-renewablee-energy:before {
+	content: "\e80a";
+}
+.em-roads-and-highways:before {
+	content: "\e80b";
+}
+.em-schools:before {
+	content: "\e80c";
+}
+.em-small-scale-economies:before {
+	content: "\e80d";
+}
+.em-smart-cities:before {
+	content: "\e80e";
+}
+.em-waster-and-waste-water:before {
+	content: "\e80f";
+}

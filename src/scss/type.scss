@@ -1,0 +1,61 @@
+//
+// Typography
+// --------------------------------------------------
+
+// Emphasis & misc
+// -------------------------
+
+@include text-emphasis-variant('.text-white', #fff);
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+
+@include text-emphasis-variant('.text-success', $brand-success);
+
+@include text-emphasis-variant('.text-info', $brand-info);
+
+@include text-emphasis-variant('.text-warning', $brand-warning);
+
+@include text-emphasis-variant('.text-danger', $brand-danger);
+
+@include text-emphasis-variant('.text-orange', $brand-orange);
+
+@include text-emphasis-variant('.text-orange-dark', $brand-orange-dark);
+
+@include text-emphasis-variant('.text-violet', $brand-violet);
+
+@include text-emphasis-variant('.text-pink', $brand-pink);
+
+// Contextual backgrounds
+@include bg-variant('.bg-gray-dark', $gray-dark);
+
+@include bg-variant('.bg-gray', $gray);
+
+@include bg-variant('.bg-success', $brand-success);
+
+@include bg-variant('.bg-info', $brand-info);
+
+@include bg-variant('.bg-warning', $brand-warning);
+
+@include bg-variant('.bg-danger', $brand-danger);
+
+@include bg-variant('.bg-orange', $brand-orange);
+
+@include bg-variant('.bg-orange-dark', $brand-orange-dark);
+
+@include bg-variant('.bg-violet', $brand-violet);
+
+@include bg-variant('.bg-pink', $brand-pink);
+
+// Page header
+// -------------------------
+
+.page-header {
+	border: 0;
+ 	margin: 0 0 50px;
+ 	padding-bottom: 0;
+
+ 	h1, h2, h3, h4, h5, h6{
+ 		margin: 0;
+ 	}
+}
+

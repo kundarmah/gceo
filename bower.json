@@ -1,0 +1,11 @@
+{
+  "name": "UNECE",
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "fontawesome": "~4.4.0",
+    "owl-carousel2": "~2.0.0-beta.3",
+    "fullpage.js": "~2.6.9",
+    "bootstrap-sass": "~3.3.5",
+    "html5shiv": "~3.7.3"
+  }
+}

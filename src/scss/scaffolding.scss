@@ -1,0 +1,9 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+html,
+body{
+	overflow: hidden;
+	@include square(100%);
+}

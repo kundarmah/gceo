@@ -1,0 +1,74 @@
+//
+// Section
+// --------------------------------------------------
+
+.section{
+	background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+	position: relative;
+	@include clearfix();
+
+	.page-header h2{
+		font-size: 48px;
+	}
+
+	@media (min-width: $screen-md-min){
+		.fade-in-up{
+			@include opacity(0);
+			@include translate(0,100px);
+			@include transition(transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1));
+		}
+
+		&.active .fade-in-up{
+			@include opacity(1);
+			@include translate(0,0);
+		}
+
+		.fade-in-down{
+			@include opacity(0);
+			@include translate(0,-100px);
+			@include transition(transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1));
+		}
+
+		&.active .fade-in-down{
+			@include opacity(1);
+			@include translate(0,0);
+		}
+	}
+
+}
+
+#fp-nav{
+	display: none;
+	right: 18px;
+	position: absolute;
+	top: 50%;
+
+	> ul {
+		margin-bottom: 0;
+		@include list-unstyled();
+
+		> li{
+			margin-bottom: 0;
+			
+			> a{
+				border: 2px solid $brand-pink;
+			    display: inline-block;
+			    margin-bottom: 15px;
+			    @include square(12px);
+
+			    &.active{
+			    	background-color: $brand-pink;
+			    }
+			}
+		}
+	}
+
+	@media (min-width: $screen-md-min){
+		display: block;
+	}
+}
+
+
+@import "section/home";

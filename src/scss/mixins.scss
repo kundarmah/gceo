@@ -1,0 +1,90 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Margin
+@mixin margin(){
+
+    @each $margin in $margins {
+
+        .m#{$margin} {
+            margin: #{$margin}px !important; 
+        }
+
+        .ml#{$margin} {
+            margin-left: #{$margin}px !important; 
+        }
+
+        .mr#{$margin} {
+            margin-right: #{$margin}px !important; 
+        }
+
+        .mt#{$margin} {
+            margin-top: #{$margin}px !important; 
+        }
+
+        .mb#{$margin} {
+            margin-bottom: #{$margin}px !important; 
+        }
+    }
+
+}
+
+// Padding
+@mixin padding(){
+
+    @each $padding in $paddings {
+
+        .p#{$padding} {
+            padding: #{$padding}px !important; 
+        }
+
+        .pl#{$padding} {
+            padding-left: #{$padding}px !important; 
+        }
+
+        .pr#{$padding} {
+            padding-right: #{$padding}px !important; 
+        }
+
+        .pt#{$padding} {
+            padding-top: #{$padding}px !important; 
+        }
+
+        .pb#{$padding} {
+            padding-bottom: #{$padding}px !important; 
+        }
+    }
+    
+}
+
+// Transformations
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+      -ms-transform: $transform; // IE9+
+          transform: $transform;
+}
+
+// Tiles
+@mixin tiles($column){
+
+    @media(min-width: $screen-md-min){
+        $tile-md-height: $screen-md-min / $column;
+
+        @for $i from 1 through $column{
+            .tile-size-#{$i}{
+                @include size(($screen-md - $grid-gutter-width) / ($column/$i) ,$tile-md-height);
+            }
+        }
+    }
+
+    @media(min-width: $screen-lg-min){
+        $tile-lg-height: $screen-lg-min / $column;
+
+        @for $i from 1 through $column{
+            .tile-size-#{$i}{
+                @include size(($screen-lg - $grid-gutter-width) / ($column/$i) ,$tile-lg-height);
+            }
+        }
+    }
+}

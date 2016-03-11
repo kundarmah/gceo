@@ -1,0 +1,91 @@
+{	
+	"title": "GCEO",
+	"path": {
+		"src": "src",
+		"dist": "dist"
+	},
+	"tasks": {
+		"sass": {
+			"watch": {
+				"files": "/scss/**"
+			},
+			"files": [
+				{
+					"autoprefix": {
+				        "enabled": true,
+				        "browsers": ["last 2 versions"]
+				    },
+					"dist": "/css/app.css",
+					"src": [
+						"/scss/app.scss"
+					]
+				}
+			]
+		},
+		"js": {
+			"watch": {
+				"files": "/js/**/*.js"
+			},
+			"files": [
+				{
+					"dist": "/js/app.js",
+					"src": [
+						"/js/app.js"
+					]
+				},
+				{
+					"dist": "/js/vendor.js",
+					"src": [
+						"/bower_components/jquery/dist/jquery.js",
+						"/bower_components/fullpage.js/jquery.fullPage.js",
+						"/bower_components/owl-carousel2/dist/owl.carousel.js",
+						"/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js",
+						"/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"
+					]
+				},
+				{
+					"dist": "/js/ie.js",
+					"src": [
+						"/bower_components/html5shiv/dist/html5shiv.js"
+					]
+				}
+			]
+		},
+		"copy": {
+			"files": [
+				{
+					"dist": "/fonts",
+					"src": [
+						"/bower_components/fontawesome/fonts/*.*"
+					]
+				}
+			]
+		},
+		"swig": {
+			"watch": {
+				"files": "/html/**/*.html",
+				"reload": true
+			},
+			"options": {
+				"defaults": { 
+					"cache": false 
+				}
+			},
+			"files": [
+				{	
+					"dist": "/",
+					"src": [
+						"/html/*.html"
+					]
+				}
+			]
+		},
+		"browsersync": {
+			"options": {
+				"server": {
+					"baseDir": "./dist"
+				}
+			}
+		}
+	}
+}

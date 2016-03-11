@@ -1,0 +1,48 @@
+//
+// Tiles
+// --------------------------------------------------
+
+.tiles{
+	margin-left: -15px;
+	margin-right: -15px;
+	@include clearfix();
+}
+
+.tile{
+	float: left;
+}
+
+[class*="bg-"].tile{
+	color: #fff;
+
+	&:hover{
+		@include scale(1.1);
+		@include transition(transform 0.3s);
+	}
+}
+
+.tile-icon{
+	padding: 15px;
+	text-align: center;
+
+	.icon{
+		display: inline-block;
+		font-size: 50px;
+		height: 50px;
+		margin-bottom: 25px;
+
+		@media (min-width: $screen-lg-min){
+			font-size: 70px;
+			height: 70px;
+		}
+	}
+
+	.title{
+		display: block;
+		line-height: 1;
+		height: 28px;
+	}
+}
+
+// tile size
+@include tiles($tile-columns);

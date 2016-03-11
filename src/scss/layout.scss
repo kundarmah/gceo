@@ -1,0 +1,45 @@
+//
+// Layout
+// --------------------------------------------------
+
+.fullpage-layout{
+
+	.navbar{
+		background-color: white;
+		border-radius: 0;
+		margin-left: 10%
+	}
+
+	@media (max-width: $screen-sm-max){
+		.scrollable{
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			position: relative;
+		}	
+
+		.page{
+			@include square(100%);
+		}
+
+		main[role="main"] > .inner{
+			height: auto !important;
+			@include transform(none !important);
+		}
+
+		.section{
+			height: auto !important;
+		}
+	}
+
+	@media (min-width: $screen-md-min){
+
+		.navbar{
+			right: 0;
+			position: absolute;
+			left: 0;
+			z-index: $zindex-navbar;
+		}
+
+	}
+}

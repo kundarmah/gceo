@@ -1,0 +1,7 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn-pink {
+  	@include button-variant($btn-pink-color, $btn-pink-bg, $btn-pink-border);
+}

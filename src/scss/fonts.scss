@@ -1,0 +1,14 @@
+//
+// Fonts
+// --------------------------------------------------
+
+@font-face {
+	font-family: $em-icon-font-family;
+	src:url('#{$em-icon-path}.eot?-qlclxc');
+	src:url('#{$em-icon-path}.eot?#iefix-qlclxc') format('embedded-opentype'),
+		url('#{$em-icon-path}.ttf?-qlclxc') format('truetype'),
+		url('#{$em-icon-path}.woff?-qlclxc') format('woff'),
+		url('#{$em-icon-path}.svg?-qlclxc##{$em-icon-font-family}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
